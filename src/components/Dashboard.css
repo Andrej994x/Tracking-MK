@@ -1,0 +1,43 @@
+.header {
+  font-size: 25px;
+  color: black !important;
+  display: flex;
+  width: 50%;
+}
+
+.ui.list .list > .item a.header,
+.ui.list > .item a.header {
+  color: black !important;
+}
+
+.item:hover {
+  background-color: rgb(237, 237, 238);
+  color: none;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.delete-btn {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+}
+
+.ui.list .list > .item a.header:hover,
+.ui.list > .item a.header:hover {
+  color: black !important;
+}
+
+.ui.tabular.menu .item:hover {
+  cursor: pointer;
+  /* background-color: #d8d8d8; */
+}
+
+.ui.tabular.menu {
+  background-color: #aae57f;
+
+  margin: 0px;
+}

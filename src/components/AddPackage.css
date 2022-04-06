@@ -1,0 +1,16 @@
+.button-add {
+  position: absolute;
+  right: 45px;
+  bottom: 30px;
+}
+
+.btn-img img {
+  cursor: pointer;
+}
+
+.ui.form {
+  position: relative;
+  right: 600px;
+  bottom: 200px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
+}

@@ -1,0 +1,49 @@
+.ui.medium.header {
+  width: 100%;
+}
+.truckimg {
+  width: 100%;
+  display: flex;
+  margin-left: 15px;
+}
+
+.logOutbtn {
+  width: 100%;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.truckimg h3 {
+  margin: 5px 0px;
+}
+
+.ui.vertical.segment {
+  background-color: #aae57f;
+  border: none;
+}
+
+.detailsForLogout {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.iconLog {
+  background-color: white;
+  padding: 15px 20px;
+  font-size: unset;
+  font-family: unset;
+  font-weight: 500;
+  display: flex;
+  border-radius: 5px;
+  background-color: #eae6df;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
+}
+
+.textForLogout {
+  margin-left: 10px;
+}
+
+.textForLogout h3 {
+  font-weight: 400;
+}

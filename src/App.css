@@ -1,0 +1,9 @@
+body {
+  background-color: #fafafa;
+  font: 400 14px/20px Roboto, Helvetica Neue, sans-serif;
+  letter-spacing: normal;
+}
+
+.wrapper {
+  padding: 20px;
+}
