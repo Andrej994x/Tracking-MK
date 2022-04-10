@@ -28,7 +28,7 @@ export default function Login({ setToken }) {
   const handleSubmitForSignUp = async (e) => {
     e.preventDefault();
 
-    const body = { username, email, password };
+    const body = { username: email, email, password };
     const signUpUser = await axios
       .post("https://tracking-core.herokuapp.com/auth/local/register", body)
       .catch((err) => {
