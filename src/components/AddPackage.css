@@ -10,7 +10,28 @@
 
 .ui.form {
   position: relative;
-  right: 600px;
-  bottom: 200px;
+  width: 265px;
+  background-color: white;
   box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
+  padding: 15px;
+  z-index: 101;
+  border-radius: 3px;
+}
+
+.form-bg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-color: rgba(25, 25, 25, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.ui button {
+  margin-right: 15px;
 }

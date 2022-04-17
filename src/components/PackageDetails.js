@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import Barcode from "react-barcode";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const PackageDetails = () => {
   const [packages, setPackages] = useState([]);
@@ -13,11 +14,22 @@ const PackageDetails = () => {
   let { id } = useParams();
   let navigate = useNavigate();
 
+  const getPackageDetails = (id) => {
+    axios
+      .get(`https://tracking-core.herokuapp.com/packages/${id}`)
+      .then((response) => {
+        setPackages([response.data]);
+      });
+  };
+
   useEffect(() => {
     const pck = data.filter((p) => p.id === id);
-
-    setPackages(pck);
-  }, [data]);
+    if (pck.length > 0) {
+      setPackages(pck);
+    } else {
+      getPackageDetails(id);
+    }
+  }, [data, id]);
 
   return (
     <>

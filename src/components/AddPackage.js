@@ -23,15 +23,15 @@ const AddPackage = () => {
   };
 
   return (
-    <div className="container ">
-      <div className="button-add">
-        {showForm ? null : (
-          <div className="btn-img" value="Add" onClick={showFormInput}>
-            <img src="https://img.icons8.com/ios/50/000000/add--v1.png" />
-          </div>
-        )}
+    <div className="button-add">
+      {showForm ? null : (
+        <div className="btn-img" value="Add" onClick={showFormInput}>
+          <img src="https://img.icons8.com/ios/50/000000/add--v1.png" />
+        </div>
+      )}
 
-        {showForm && (
+      {showForm && (
+        <div className="form-bg">
           <form className="ui form">
             <div className="field">
               <label>Name</label>
@@ -79,8 +79,8 @@ const AddPackage = () => {
               No Thanks
             </button>
           </form>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
